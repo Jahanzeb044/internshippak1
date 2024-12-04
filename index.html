@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Finder | Karachi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="homepage.html">Hostel Finder</a>
+      </div>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="hostle-listings.html">Hostel Listings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Find Your Perfect Hostel in Karachi</h1>
+      <p>Whether you're a student or a traveler, find the best hostels in Karachi that fit your budget and needs.</p>
+
+      <form class="search-form" action="hostle-listings.html" method="get">
+        <input type="text" name="location" placeholder="Enter location (e.g., Karachi)" required>
+        <select name="price-range">
+          <option value="all">Price Range</option>
+          <option value="1">Rs. 5000 - Rs. 15000</option>
+          <option value="2">Rs. 15000 - Rs. 25000</option>
+          <option value="3">Rs. 25000 - Rs. 35000</option>
+           <option value="1">Rs. 35000 - Rs. 45000</option>
+          <option value="2">Rs. 45000 - Rs. 55000</option>
+          <option value="3">Rs. 55000 - Rs. 65000</option>
+           <option value="1">Rs. 65000 - Rs. 75000</option>
+          <option value="2">Rs. 75000 - Rs. 85000</option>
+          <option value="3">Rs. 85000 - Rs. 95000</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h2>Welcome to Hostel Finder</h2>
+      <p>We help students and travelers in Karachi find affordable and comfortable hostels with great amenities. Our platform lists verified hostels with all the necessary details to help you make an informed decision.</p>
+      <a href="hostle-listings.html" class="btn">Browse Hostels</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Hostel Finder Karachi | All Rights Reserved</p>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+<style >
+    /* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2c3e50; /* Dark Blue */
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo a {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+  background-color: #e74c3c; /* Red */
+  border-radius: 5px;
+}
+
+/* Hero Section */
+
+.hero {
+background-color: #808000; /* New background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('hostel-hero.jpg'); /* Placeholder image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.search-form input,
+.search-form select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 250px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Green */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #27ae60; /* Darker Green */
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  background-color: #ecf0f1; /* Light Gray */
+  text-align: center;
+}
+
+.about .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.about .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #e74c3c; /* Red */
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.about .btn:hover {
+  background-color: #c0392b; /* Darker Red */
+}
+
+/* Footer */
+footer {
+  background-color: #050505;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .search-form input,
+  .search-form select {
+    width: 200px;
+  }
+
+  .about .btn {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .search-form input,
+  .search-form select {
+    width: 150px;
+  }
+
+  .about .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+</style>
